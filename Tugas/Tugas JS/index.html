@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Java Script</title>
+
+</head>
+<body>
+
+    <script>
+        var x = 5;
+        console.log("ini test");
+    
+    var y = 0.5;
+    var bo = true;
+    
+    var arr = ['ini', 'tulisan', 'array'];
+    // arr[0]
+    console.log(arr[0])
+    
+    x += y; // x = x + y
+
+    console.log(x);
+
+const bo1 = true;
+
+
+    const obj = {name: "fauzi", age: 25};
+
+obj.name = "rizki";
+
+const arr1 = ['ini', 'apa'];
+arr1[0] = 'nilai baru';
+
+console.log(typeof arr);
+
+
+console.log(true || false);
+
+var z = new String('ini tulisan');
+console.log(z instanceof String);
+
+
+if (x < 3){
+    console.log('Kodo ini tidak akan dieksekusi');
+}else {
+    console.log('ini di print');
+
+}
+
+switch (x) {
+    case 4:
+    console.log('oke');
+    break;
+
+    case 5:
+    console.log('oke');
+    break;
+}
+    
+var awal = 1;
+while (awal <100) {
+    console.log(awal)
+    awal++ ;
+}
+
+
+var awal1 = 1;
+while (awal1 <= 100) {
+    awal1 ++;
+    if(awal1 == 30){
+        continue
+    }
+    console.log(awal1)
+}
+
+class car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+var mobil = new car('toyota', 2000);
+console.log(mobil);
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Home</title>
+<meta charset="UTF-8">
+<element onload="myScript">
+
+</head>
+
+   <h2 class="text-center">Custom File Input</h2>
+
+<div id="coba">
+	ini adalah id coba
+</div>
+
+<div id="myskill">
+	ini konten 1
+</div>
+
+<div id="myskill">
+	ini konten 2
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+</script>
+
+<script>
+    /*
+	$(document).ready(function(){
+      var isi = $('#coba').text('ini text nya uda berubah');
+
+      $('.myskill').text('ini teks sudah diubah')
+      $('p').text('ini teks sudah diubah p')
+      //$(.myskill:nth-child(2)).text('ini teks sudah diubah')
+      
+      $('.coba').click(function({
+          $('this')='hide'
+      })
+        
+    });
+*/
+
+$(document).ready(function(){
+    $.get("https://jsonplaceholder.typicode.com/todos/1",function(response){
+            console.log(response);
+            $("#coba").text(response.title);
+    })
+})
+
+
+/*function myFunction() {
+  alert("Page is loaded");
+}*/
+
+</script>
+
+
+
+</body>
+</html>
